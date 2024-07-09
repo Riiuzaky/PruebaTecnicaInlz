@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.10.12 on win32)" generated="20240614 21:36:22.923" rpa="false" schemaversion="4">
+<suite id="s1" name="Tasks" source="F:\PruebaTecnica-inlaze\FlujoPrueba\tasks.robot">
+<test id="s1-t1" name="Prueba Flujo" line="10">
+<kw name="Open Browser" library="RPA.Browser.Selenium">
+<arg>https://stake.com.co/es/bienvenida</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240614 21:36:23.716" level="INFO">Opening browser 'chrome' to base url 'https://stake.com.co/es/bienvenida'.</msg>
+<status status="PASS" starttime="20240614 21:36:23.716" endtime="20240614 21:36:31.060"/>
+</kw>
+<kw name="Maximize Browser Window" library="RPA.Browser.Selenium">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240614 21:36:31.061" endtime="20240614 21:36:31.098"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240614 21:36:32.111" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20240614 21:36:31.099" endtime="20240614 21:36:32.111"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser.Selenium">
+<arg>//*[@id="root"]/div/div[1]/div/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240614 21:36:32.113" level="INFO">Clicking element '//*[@id="root"]/div/div[1]/div/div[1]'.</msg>
+<status status="PASS" starttime="20240614 21:36:32.112" endtime="20240614 21:36:32.250"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240614 21:36:33.263" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20240614 21:36:32.251" endtime="20240614 21:36:33.263"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser.Selenium">
+<arg>//*[@id="root"]/div/div[1]/div/div[1]/a[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240614 21:36:33.273" level="INFO">Clicking element '//*[@id="root"]/div/div[1]/div/div[1]/a[2]'.</msg>
+<status status="PASS" starttime="20240614 21:36:33.272" endtime="20240614 21:36:33.451"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240614 21:36:35.461" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20240614 21:36:33.452" endtime="20240614 21:36:35.461"/>
+</kw>
+<kw name="Click Link" library="RPA.Browser.Selenium">
+<arg>xpath=//a[contains(text(), 'Promociones')]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20240614 21:36:35.462" level="INFO">Clicking link 'xpath=//a[contains(text(), 'Promociones')]'.</msg>
+<status status="PASS" starttime="20240614 21:36:35.462" endtime="20240614 21:36:35.625"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240614 21:36:37.632" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20240614 21:36:35.626" endtime="20240614 21:36:37.632"/>
+</kw>
+<kw name="Click Link" library="RPA.Browser.Selenium">
+<arg>xpath=//a[@href='/es/promociones/apuesta-gratis-de-bienvenida']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20240614 21:36:37.633" level="INFO">Clicking link 'xpath=//a[@href='/es/promociones/apuesta-gratis-de-bienvenida']'.</msg>
+<status status="PASS" starttime="20240614 21:36:37.633" endtime="20240614 21:36:37.733"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240614 21:36:38.747" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20240614 21:36:37.734" endtime="20240614 21:36:38.748"/>
+</kw>
+<kw name="Scroll Element Into View" library="RPA.Browser.Selenium">
+<arg>xpath=//h1[contains(text(),'Apuesta Gratis De Bienvenida')]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20240614 21:36:38.751" endtime="20240614 21:36:39.046"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240614 21:36:40.056" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20240614 21:36:39.047" endtime="20240614 21:36:40.056"/>
+</kw>
+<kw name="Element Exist By Text">
+<arg>xpath=//h1[contains(text(),'Apuesta Gratis De Bienvenida')]</arg>
+<arg>Apuesta Gratis De Bienvenida</arg>
+<kw name="Element Should Be Visible" library="RPA.Browser.Selenium">
+<arg>${locator}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240614 21:36:40.082" level="INFO">Element 'xpath=//h1[contains(text(),'Apuesta Gratis De Bienvenida')]' is displayed.</msg>
+<status status="PASS" starttime="20240614 21:36:40.058" endtime="20240614 21:36:40.083"/>
+</kw>
+<kw name="Get Text" library="RPA.Browser.Selenium">
+<var>${texto_elemento}</var>
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20240614 21:36:40.102" level="INFO">${texto_elemento} = Apuesta Gratis De Bienvenida</msg>
+<status status="PASS" starttime="20240614 21:36:40.083" endtime="20240614 21:36:40.102"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${texto_elemento}</arg>
+<arg>${text}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20240614 21:36:40.102" endtime="20240614 21:36:40.103"/>
+</kw>
+<status status="PASS" starttime="20240614 21:36:40.057" endtime="20240614 21:36:40.103"/>
+</kw>
+<doc>Flujo promociones</doc>
+<tag>Prueba_Control</tag>
+<status status="PASS" starttime="20240614 21:36:23.714" endtime="20240614 21:36:40.104"/>
+</test>
+<status status="PASS" starttime="20240614 21:36:22.927" endtime="20240614 21:36:40.106"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Prueba_Control</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tasks">Tasks</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
